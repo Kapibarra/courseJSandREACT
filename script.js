@@ -24,4 +24,13 @@ for (let i = 0; i < 2; i++) {
     personalMovieDB.movies[a] = b
 }
 
+if (personalMovieDB.count < 10) {
+    console.log("Мало фильмов")
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30) {
+    console.log("Среднее количество фильмов")
+} else if (personalMovieDB.count > 30) {
+    console.log("Киноман")
+} else {
+    console.log("error")
+}
 console.log(personalMovieDB);
