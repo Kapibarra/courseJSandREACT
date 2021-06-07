@@ -13,6 +13,14 @@ for (let i = 0; i < 2; i++) {
     const a = prompt("Какие фильмы?", "");
     b = prompt("Оценка фильма?", "");
 
+    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+        personalMovieDB.movies[a] = b
+        console.log('Done')
+    } else {
+        i--;
+        console.log('Error')
+    }
+
     personalMovieDB.movies[a] = b
 }
 
