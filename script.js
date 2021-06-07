@@ -1,4 +1,4 @@
-const numberOfFilms = +prompt("How much films?", "");
+const numberOfFilms = +prompt("сколько фильмов вы посмотрели?", "");
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -9,12 +9,11 @@ const personalMovieDB = {
 };
 
 
-const a = prompt("which  films?", ""),
-    b = prompt("Raiting?", ""),
-    c = prompt("which films?", ""),
-    d = prompt("Raiting?", "");
+for (let i = 0; i < 2; i++) {
+    const a = prompt("Какие фильмы?", "");
+    b = prompt("Оценка фильма?", "");
 
-personalMovieDB.movies[a] = b
-personalMovieDB.movies[c] = d
+    personalMovieDB.movies[a] = b
+}
 
 console.log(personalMovieDB);
